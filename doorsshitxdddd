@@ -1,0 +1,242 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Shit Hub xd", HidePremium = false, SaveConfig = false, ConfigFolder = "Shit Hub xd Config"})
+
+local Tab = Window:MakeTab({
+	Name = "Main Doors",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Scripts"
+})
+
+Tab:AddButton({
+	Name = "Full Brightness",
+	Callback = function()
+      		local Light = game:GetService("Lighting")
+ 
+function dofullbright()
+Light.Ambient = Color3.new(1, 1, 1)
+Light.ColorShift_Bottom = Color3.new(1, 1, 1)
+Light.ColorShift_Top = Color3.new(1, 1, 1)
+end
+ 
+dofullbright()
+ 
+Light.LightingChanged:Connect(dofullbright)
+
+wait(1)
+
+OrionLib:MakeNotification({
+	Name = "Script Loaded!",
+	Content = "Full Brightness script loaded successfully!",
+	Image = "rbxassetid://4483345998",
+	Time = 6
+})
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Faster Walkspeed",
+	Callback = function()
+      		getgenv().WalkSpeedValue = 22; --set your desired walkspeed here
+
+local Player = game:service'Players'.LocalPlayer;
+
+Player.Character.Humanoid:GetPropertyChangedSignal'WalkSpeed':Connect(function()
+
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+
+end)
+
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+
+wait(1)
+
+OrionLib:MakeNotification({
+	Name = "Script Loaded!",
+	Content = "Faster Walkspeed script loaded successfully!",
+	Image = "rbxassetid://4483345998",
+	Time = 6
+})
+  	end    
+})
+
+Tab:AddButton({
+	Name = "AntiCheat Bypass",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/DoorsBypasses/DoorsACBypass.lua")()
+      		wait(0.9)
+      		OrionLib:MakeNotification({
+	Name = "Script Loaded!",
+	Content = "Anti Cheat bypass yay!1!1!1!!!1!11!",
+	Image = "rbxassetid://4483345998",
+	Time = 6
+})
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Others Scripts"
+})
+
+Tab:AddButton({
+	Name = "Enable Reset",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/mW24cfXm", true))()
+      		wait(0.7)
+      		OrionLib:MakeNotification({
+	Name = "Script Loaded!",
+	Content = "Enable Reset script loaded successfully!",
+	Image = "rbxassetid://4483345998",
+	Time = 6
+})
+  	end    
+})
+Tab:AddButton({
+	Name = "Doors Stats",
+	Callback = function()
+        table.foreach(require(game.ReplicatedStorage.ReplicaDataModule).data.Stats, print)
+      		wait(0.9)
+      		OrionLib:MakeNotification({
+	Name = "Script Loaded!",
+	Content = "Type /console or press F9 to see the stats!",
+	Image = "rbxassetid://4483345998",
+	Time = 6
+})
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "Esp",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "ESP Keys",
+	Callback = function()
+	       wait(1.2)
+      		OrionLib:MakeNotification({
+	Name = "Script not loaded.",
+	Content = "An error occurred when tried to load the script..",
+	Image = "rbxassetid://4483345998",
+	Time = 6
+})
+  	end    
+})
+
+Tab:AddButton({
+	Name = "ESP Players",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/JHsrdnGy"))()
+      		wait(0.7)
+      		OrionLib:MakeNotification({
+	Name = "Script Loaded!",
+	Content = "Esp Players loaded successfully!",
+	Image = "rbxassetid://4483345998",
+	Time = 6
+})
+  	end    
+})
+
+Tab:AddButton({
+	Name = "ESP Books",
+	Callback = function()
+	       wait(1.2)
+      		OrionLib:MakeNotification({
+	Name = "Script not loaded.",
+	Content = "An error occurred when tried to load the script..",
+	Image = "rbxassetid://4483345998",
+	Time = 6
+})
+  	end    
+})
+
+Tab:AddButton({
+	Name = "ESP Levers",
+	Callback = function()
+	       wait(1.2)
+      		OrionLib:MakeNotification({
+	Name = "Script not loaded.",
+	Content = "An error occurred when tried to load the script..",
+	Image = "rbxassetid://4483345998",
+	Time = 6
+})
+  	end    
+})
+
+Tab:AddButton({
+	Name = "ESP Doors",
+	Callback = function()
+	       wait(1.2)
+      		OrionLib:MakeNotification({
+	Name = "Script not loaded.",
+	Content = "An error occurred when tried to load the script..",
+	Image = "rbxassetid://4483345998",
+	Time = 6
+})
+  	end    
+})
+
+Tab:AddButton({
+	Name = "ESP Figure",
+	Callback = function()
+	       wait(1.2)
+      		OrionLib:MakeNotification({
+	Name = "Script not loaded.",
+	Content = "An error occurred when tried to load the script..",
+	Image = "rbxassetid://4483345998",
+	Time = 6
+})
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "Troll",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Amogus (Door 0)",
+	Callback = function()
+      		local model = game:GetObjects("rbxassetid://11947954739")[1]
+model.Parent = workspace
+model.Anchored = true
+model.CFrame =
+workspace.CurrentRooms[0].Parts.FrontDesk.Paper.CFrame *
+CFrame.new(0,.9, 0)
+model.Prompt.Triggered:Connect(function()
+
+firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent, "you have been SUSED by the AMONGUS") model["STOP POSTING ABOUT AMONG US (FULL, CLEAN)"]:Play()
+
+end)
+OrionLib:MakeNotification({
+	Name = "Script Loaded!",
+	Content = "Amogus script loaded successfully!",
+	Image = "rbxassetid://4483345998",
+	Time = 6
+})
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Walk Walls",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/svreutTN"))()
+      		wait(0.7)
+      		OrionLib:MakeNotification({
+	Name = "Script Loaded!",
+	Content = "Walk Walls script loaded successfully!",
+	Image = "rbxassetid://4483345998",
+	Time = 6
+})
+  	end    
+})
+
+OrionLib:Init()
